@@ -1,0 +1,141 @@
+body{    
+    background-color:#050505;
+}
+
+#container{    
+    width: 350px;    
+    height: auto;    
+    margin: 0 auto;    
+    text-align: center;    
+    background-color: rgb(26, 26, 26);    
+    height: 100%;    
+    overflow-y: auto;    
+    color: black;    
+    border: 1px solid white;    
+}
+    
+#container p{    
+    margin-top: 50px;    
+    margin-bottom: 50px;    
+    text-transform:uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+#container ul{  
+    margin-top: 50px;    
+    padding-left: 0;
+}
+
+#container ul li{    
+    list-style: none;    
+    border: none;    
+    background-color: tomato;
+    width:83%;    
+    opacity: 0;    
+    transition: opacity 0.5s ease-in-out;    
+    height: 40px;    
+    margin: 5px auto;    
+    text-align: left;
+}
+
+#container ul li label{    
+    color: turquoise;
+    margin: 0 auto;    
+    vertical-align: middle;    
+    height: 100%;    
+    line-height: 40px;    
+    font-size: 16px;
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container ul li #check{    
+    float: left;    
+    width: 20px;    
+    height: 20px;    
+    margin: 10px;    
+    -webkit-appearance: none;  
+    border: none;  
+    border-radius: 50%;   
+    background-color: turquoise;
+    position: relative;    
+    outline: 0;
+}
+
+#container ul li #check:checked:after{    
+    content: '\2714';       
+    font-size: 15px;    
+    position: absolute;    
+    top: 0px;  
+    left: 5px;      
+    color: black;
+}
+
+#container ul li input[type="checkbox"]:checked+label{    
+    text-decoration: line-through turquoise;    
+    
+}
+
+#container .controls{    
+    width: 90%;    
+    margin: auto;
+}
+
+#container .controls #input{    
+    width: 70%;    
+    height: 30px;    
+    font-size: 16px;    
+    padding-left: 5px;    
+    box-sizing: border-box;      
+    border: 1px solid #b5c5dd;
+    background-color: rgb(49, 49, 49);
+    color: white;    
+}
+    
+#container .controls #input:focus{    
+    outline: 0;
+}
+
+#container .controls button{    
+    width: 30px;       
+    border:1px solid white;    
+    height: 30px;       
+    cursor: pointer;    
+    color: white;
+}
+
+#container .controls button:focus{    
+    outline: 0;
+}
+
+#container .controls #add:hover, #remove:hover{    
+    transform: scale(1.05)
+}
+
+#container .controls #add::after{
+    content: '\002B';       
+    color: black;     
+}
+
+#container .controls #remove::after{    
+    content: '\26D4';  
+    position: relative;
+    right: 0.5px; 
+}
+#container .controls #remove{    
+    position: relative;
+    top: 0.5px; 
+}
+
+
+#container .mycheck{    
+    opacity: 1;
+    background-color: #050505;    
+}
+
+.visual{        
+    opacity: 1 !important;         
+}
